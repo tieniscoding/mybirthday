@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <script>
-        // Redirect logic using relative paths for compatibility
-        const storedName = localStorage.getItem("my");
-        if (!storedName) {
-            window.location.href = "./welcome.html"; // Redirect to the welcome page if no name stored
-        } else {
-            window.location.href = "./page2.html";  // If name exists, go to the story start
-        }
-    </script>
+    <script src="script.js"></script> <!-- Fixed script path -->
 </head>
 <body>
-    <p>If you're not redirected, <a href="./welcome.html">click here to start the story</a>.</p>
+    <script>
+        const storedName = localStorage.getItem("partnerName");
+        if (!storedName) {
+            window.location.href = "welcome.html"; // Fixed path reference
+        } else {
+            window.location.href = "page2.html";
+        }
+    </script>
+    <p>If you're not redirected, <a href="welcome.html">click here to start the story</a>.</p>
 </body>
 </html>
