@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Our Love Story</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Fixed path -->
+    <script src="script.js" defer></script> <!-- Fixed path -->
 </head>
 <body>
     <div class="container google-style">
-        <h1 class="google-logo">Happy Birthday em!</h1>
+        <h1 class="google-logo">Happy Birthday Em!</h1>
         <p class="message">Type the magic word to unlock the story:</p>
+        
         <input type="text" id="magicWord" placeholder="Type 'my'..." required>
         <div class="button-group">
             <button onclick="checkMagicWord()">Open your gift</button>
         </div>
+        
         <p id="errorMessage" style="color: red; display: none; margin-top: 10px;">Incorrect word! Try again.</p>
     </div>
 </body>
