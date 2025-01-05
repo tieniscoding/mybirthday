@@ -5,7 +5,7 @@ window.onload = function () {
 
     // Redirect to welcome if not unlocked yet
     if (!storedName && currentPage !== "welcome.html") {
-        window.location.href = "/welcome.html";
+        window.location.href = "./welcome.html";
     }
 
     // Display the saved name on each page
@@ -19,13 +19,13 @@ function checkMagicWord() {
     const magicWord = document.getElementById("magicWord").value.trim().toLowerCase();
     if (magicWord === "my") {
         localStorage.setItem("partnerName", "My Love");
-        window.location.href = "/page2.html";
+        window.location.href = "./page2.html";
     } else {
         document.getElementById("errorMessage").style.display = "block";
     }
 }
 
-// Move to the next page with absolute path
+// Move to the next page with relative path
 function nextPage(pageUrl) {
     window.location.href = pageUrl;
 }
