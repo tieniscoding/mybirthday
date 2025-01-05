@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Redirect logic using absolute paths for GitHub Pages compatibility
+        // Redirect logic using relative paths for compatibility
         const storedName = localStorage.getItem("my");
         if (!storedName) {
-            window.location.href = "/welcome.html"; // Redirect to the welcome page if no name stored
+            window.location.href = "./welcome.html"; // Redirect to the welcome page if no name stored
         } else {
-            window.location.href = "/page2.html";  // If name exists, go to the story start
+            window.location.href = "./page2.html";  // If name exists, go to the story start
         }
     </script>
 </head>
 <body>
-    <p>If you're not redirected, <a href="/welcome.html">click here to start the story</a>.</p>
+    <p>If you're not redirected, <a href="./welcome.html">click here to start the story</a>.</p>
 </body>
 </html>
