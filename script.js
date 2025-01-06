@@ -14,7 +14,7 @@ window.onload = function () {
 
 function checkMagicWord() {
     const magicWord = document.getElementById("magicWord").value.trim().toLowerCase();
-    if (magicWord === "my") {
+    if (magicWord === "110824") {
         localStorage.setItem("partnerName", "My Love");
         window.location.href = "page2.html";
     } else {
